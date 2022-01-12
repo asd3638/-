@@ -1,6 +1,8 @@
 n = int(input())
 
-if (n % 9 == 0) or (n % 3 == 2):
-    print("TAK")
-    exit()
-print("NIE")
+for i in range(n):
+    num = int(input())
+    if (num % 9 == 0) or (num % 3 == 2):
+        print("TAK")
+        continue
+    print("NIE")
