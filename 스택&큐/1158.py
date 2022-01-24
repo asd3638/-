@@ -3,8 +3,7 @@ n, k = map(int, input().split())
 deque = deque()
 index = 1
 answer = []
-for i in range(1, n + 1):
-    deque.append(i)
+deque = [i for i in range(1, n + 1)]
 while len(deque):
     if index % k == 0:
         answer.append(deque.popleft())
